@@ -1,0 +1,32 @@
+[package]
+name = "platformer_shared"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+wasm-bindgen = "~0.2"
+crystalorb-bevy-networking-turbulence = "0.2.1"
+crystalorb = {version = "0.2.1" }
+crystalorb-mock-network = {version = "0.2.1" }
+rapier2d = {version = "0.9.1", features = ["serde-serialize", "wasm-bindgen"]}
+serde = {version = "1.0.118", features = ["derive"]}
+
+[dependencies.bevy]
+version = "0.5.0"
+default-features = false
+features = []
+
+[features]
+render = [
+    #"bevy/bevy_audio",
+    #"bevy/bevy_dynamic_plugin",
+    #"bevy/bevy_gilrs",
+    #"bevy/bevy_gltf",
+    "bevy/bevy_wgpu",
+    #"bevy/bevy_winit",
+    "bevy/render",
+    #"bevy/png",
+    #"bevy/hdr",
+    #"bevy/mp3",
+    "bevy/x11",
+]

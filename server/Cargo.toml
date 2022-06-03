@@ -1,0 +1,10 @@
+[package]
+name = "platformer-server"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+
+[dependencies.platformer_shared]
+path = "../shared"
+#features = ["render"]
