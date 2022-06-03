@@ -39,7 +39,7 @@ fn player_input(
 
         if let Some(player_id) = player_id {
             let player_input = &PlayerInput {
-                action: input.pressed(KeyCode::Space),
+                action: input.just_pressed(KeyCode::Space),
                 left: input.pressed(KeyCode::Left),
                 right: input.pressed(KeyCode::Right),
             };
